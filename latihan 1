@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int NoKomputer;
+    char NamaPemakai[50];
+    int LamaPakai;
+    long TotalTagihan;
+    long Discount;
+
+    cout<<"Berapa nomer kompi lu tong?";
+    cin>>NoKomputer;
+
+    cout<<"Nama lu sape tong?";
+    cin>>NamaPemakai;
+
+    cout<<"Berape jem lu tong maennye?";
+    cin>>LamaPakai;
+
+    TotalTagihan=LamaPakai*4000;
+    if (LamaPakai>5)
+    {
+        Discount=0.1*TotalTagihan;
+        TotalTagihan=TotalTagihan-Discount;
+    }
+        cout<<"No. Komputer     = "<<NoKomputer<<"\n";
+        cout<<"Nama Pemakai     = "<<NamaPemakai<<"\n";
+        cout<<"Waktu Bermain    = "<<LamaPakai<<"\n";
+        cout<<"Total Tagihan    = "<<TotalTagihan<<"\n";
+
+return 0;
+}
+
