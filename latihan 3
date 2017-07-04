@@ -1,0 +1,25 @@
+#include <iostream> // Define iostream
+using namespace std; // menggunakan std
+int main()
+{
+
+float Nilai;
+int BanyakMahasiswa;
+float RataRata;
+float JumlahNilai=0;
+
+    cout << "Banyak Mahasiswa :" ;
+    cin >> BanyakMahasiswa ;
+    
+ for (int i=0;i<BanyakMahasiswa;i++){
+        cout<<"Masukkin Nilai :";
+        cin>>Nilai;
+    JumlahNilai = JumlahNilai + Nilai;
+   }
+    RataRata = JumlahNilai/BanyakMahasiswa;
+{
+
+ }cout<<"Rata-Rata : "<<RataRata<<endl;
+
+return 0;
+}
